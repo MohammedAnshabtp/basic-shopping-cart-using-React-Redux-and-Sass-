@@ -1,0 +1,13 @@
+@import './ShoppingCart';
+@import './CartItem';
+@import './CartList';
+@import './CartTotal';
+
+.App h2 {
+    display: flex;
+    justify-content:center;
+    color: hotpink;
+    font-family: 'Bubblegum Sans', cursive;     
+    font-size: 2rem; 
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5); 
+  }
