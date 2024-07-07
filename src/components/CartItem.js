@@ -8,15 +8,16 @@ const CartItem = ({ item }) => {
 
     return (
         <div className="cart-item">
-            <span>{item.name}</span>
-            <span>
+            <div className="item-name">{item.name}</div>
+            <div className="item-qty">
                 <button onClick={() => dispatch(removeItem(item.id))}>-</button>
                 {item.quantity}
                 <button onClick={() => dispatch(addItem(item))}>+</button>
-            </span>
-            <span>QAR {item.price}</span>
+            </div>
+            <div className="item-price">QAR {item.price * item.quantity}</div>
         </div>
     );
+
 };
 
 export default CartItem;

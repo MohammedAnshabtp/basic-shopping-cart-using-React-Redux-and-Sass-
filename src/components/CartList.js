@@ -3,6 +3,7 @@ import '../styles/CartList.scss';
 import { useSelector } from 'react-redux';
 import CartItem from '../components/CartItem';
 import Cart from '../assets/cart.png';
+import DiscountCoupon from './DiscountCoupon';
 
 
 function CartList() {
@@ -13,8 +14,7 @@ function CartList() {
     return (
         <div className="cart-list">
             <div className="cart-list-header">
-                <i className="fas fa-shopping-cart"></i> {/* Basket icon */}
-                <img src="../assets/cart.png" alt='cart' />
+
                 <h2>Cart summary</h2>
             </div>
             <div className="cart-table-header">
@@ -25,6 +25,7 @@ function CartList() {
             {cart.map((item) => (
                 <CartItem key={item.id} item={item} />
             ))}
+            <DiscountCoupon />
         </div>
     )
 }
