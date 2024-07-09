@@ -1,78 +1,83 @@
+.cart-list {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 
-  .cart-list {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  
-    .cart-list-header {
+  .cart-list-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+      font-size: 24px;
       display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 20px;
-  
-      h2 {
-        margin: 0;
-        font-size: 24px;
-        display: flex;
-    justify-content: flex-start;
-    font-family: 'Bubblegum Sans', cursive;     
-    font-size: 2rem; 
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5); 
-    color:blue;
-      }
+      justify-content: flex-start;
+      font-family: "Bubblegum Sans", cursive;
+      font-size: 2rem;
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+      color: blue;
     }
-  
-    .cart-table-header {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 2px solid #ccc;
-      font-weight: bold;
-  
-      span {
-        flex: 1;
-        text-align: center;
-  
-        &:first-child {
-          text-align: left;
-        }
-  
-        &:last-child {
-          text-align: right;
-        }
+  }
+  .img-container {
+    display: block;
+    // width: 100%;
+  }
+  img {
+    width: 40px;
+  }
+
+  .cart-table-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+    font-weight: bold;
+
+    span {
+      flex: 1;
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
       }
-    }
-  
-    .cart-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 1px solid #eee;
-  
-      span {
-        flex: 1;
-        text-align: center;
-  
-        &:first-child {
-          text-align: left;
-        }
-  
-        &:last-child {
-          text-align: right;
-        }
-      }
-  
-      button {
-        border: none;
-        background: none;
-        cursor: pointer;
-        padding: 5px;
-        font-size: 16px;
-  
-        &:hover {
-          color: #007bff;
-        }
+
+      &:last-child {
+        text-align: right;
       }
     }
   }
-  
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+
+    span {
+      flex: 1;
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 5px;
+      font-size: 16px;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+}

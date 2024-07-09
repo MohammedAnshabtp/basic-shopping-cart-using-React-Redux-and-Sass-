@@ -14,7 +14,10 @@ function CartList() {
     return (
         <div className="cart-list">
             <div className="cart-list-header">
+                <div className="img-container">
+                    <img src={Cart} alt="Cart" />
 
+                </div>
                 <h2>Cart summary</h2>
             </div>
             <div className="cart-table-header">

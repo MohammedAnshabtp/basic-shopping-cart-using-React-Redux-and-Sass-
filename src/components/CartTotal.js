@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import '../styles/CartTotal.scss';
+import Boat from "../assets/kid.png"
 
 const CartTotal = () => {
     const totalPrice = useSelector((state) => state.cart.totalPrice);
@@ -10,10 +11,15 @@ const CartTotal = () => {
 
     return (
         <div className="cart-total">
+
             <div className="cart-list-total">
                 <h2>Total Cart Value </h2>
             </div>
+            <div className="cart-img">
+                <img src={Boat} alt="Cart" />
+            </div>
             <div className="cart-total">
+
                 <table>
                     <tbody>
                         <tr>
@@ -22,11 +28,11 @@ const CartTotal = () => {
                         </tr>
                         <tr>
                             <td>Discounts</td>
-                            <td>0</td>
+                            <td>{discount}</td>
                         </tr>
                         <tr>
                             <td>Total</td>
-                            <td>QAR {totalPrice}</td>
+                            <td>QAR {finalPrice}</td>
                         </tr>
                     </tbody>
                 </table>
